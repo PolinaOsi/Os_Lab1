@@ -10,7 +10,7 @@ void *print(void *whois) {
     for (int i = 0; i < 10; i++) {
         printf("%s%d\n", (char*)whois, i + 1);
     }
-        return NULL;
+    return NULL;
 }
 
 int main (int  argc, char *argv[]) {
