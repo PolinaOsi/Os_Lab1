@@ -11,7 +11,7 @@ void *print(void *whois) {
         printf("%s%d\n", (char*)whois, i + 1);
     }
     free((char*)whois);
-    return NULL;
+    return EXIT_SUCCESS;
 }
 
 int main (int  argc, char *argv[]) {
