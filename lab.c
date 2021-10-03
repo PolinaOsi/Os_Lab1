@@ -16,7 +16,7 @@ void *print(void *whois) {
 
 int main (int  argc, char *argv[]) {
     pthread_t id_of_thread;
-    int LENGHT_OF_STRING = 7;
+    int LENGHT_OF_STRING = 8;
     char *childText = (char*)malloc(sizeof(char)*LENGHT_OF_STRING);
     strcpy(childText, "child ");
     char *parentText = (char*)malloc(sizeof(char)*LENGHT_OF_STRING);
