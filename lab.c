@@ -19,8 +19,7 @@ int main (int  argc, char *argv[]) {
     int LENGHT_OF_STRING = 8;
     char *childText = (char*)malloc(sizeof(char)*LENGHT_OF_STRING);
     strcpy(childText, "child ");
-    char *parentText = (char*)malloc(sizeof(char)*LENGHT_OF_STRING);
-    strcpy(parentText, "parent ");
+    char *parentText = "parent ";
     int result_of_creation = pthread_create (&id_of_thread, NULL, print_and_free, childText);
     if (result_of_creation != SUCCESS_OF_CREATION) {
         perror("Thread was not created!");
