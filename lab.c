@@ -25,6 +25,7 @@ int main (int  argc, char *argv[]) {
     if (result_of_creation != SUCCESS_OF_CREATION) {
         perror("Thread was not created!");
         free(childText);
+        free(parentText);
         exit(EXIT_FAILURE);
     }
     print(parentText);
